@@ -107,7 +107,8 @@ In order for the push-button to work properly, we will configure a technique cal
   + Select on the source files and open the “main.c” file
     + Before the while loop, define a boolean named **pressed** and assign false.
 
-  ```     
+
+```     
   bool pressed = false;
     while (1)
    {
@@ -121,7 +122,9 @@ In order for the push-button to work properly, we will configure a technique cal
        }
 
    }
-      ```
+  ```
+
+
 
   + Make and Program the Device
 
@@ -143,6 +146,6 @@ In order for the push-button to work properly, we will configure a technique cal
 
 ## Summary
 
-This application shows how to create a debouncer for the push-button in order to use UART to display a message t0 a serial terminal when the button is pushed. 
+This application shows how to create a debouncer for the push-button in order to use UART to display a message t0 a serial terminal when the button is pushed.
 
   ![Terminal Emulator Results](images/Picture6.PNG)
