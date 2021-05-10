@@ -138,11 +138,11 @@ In order for the push-button to work properly, we will configure a technique cal
 
   ![Terminal Emulator Settings](images/Picture5.PNG)
 
+  + If everything is setup correctly, then the serial terminal should start displaying the printf statement when the push-button is activated.
 
-## Operation
-
-<!-- Explain how to operate the example. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
 
 ## Summary
 
-<!-- Summarize what the example has shown -->
+This application shows how to create a debouncer for the push-button in order to use UART to display a message t0 a serial terminal when the button is pushed. 
+
+  ![Terminal Emulator Results](images/Picture6.PNG)
