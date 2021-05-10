@@ -17,39 +17,55 @@
                 "name": "XC8",
                 "semverRange": "^2.31.0"
             }
-        ],
-        "dfp": {
-            "name": "",
-            "semverRange": ""
-        },
-        "configurator": {
-            "name": "",
-            "semverRange": ""
-        },
-        "device": {
-            "metaDataVersion": "1.0.0",
-            "category": "com.microchip.portal.contentRef",
-            "content": {
-                "metaDataVersion": "1.0.0",
-                "category": "com.microchip.device",
-                "name": "PIC18F16Q41",
-                "versionRange": "*"
-            }
-        },
-        "author": "Ethan Layton",
-        "subcategories": [],
-        "peripherals": [],
-        "keywords": [],
-        "additionalData": {
-            "longDescription": {
-                "metaDataVersion": "1.0.0",
-                "category": "com.microchip.portal.fileRef",
-                "content": {
-                    "metaDataVersion": "1.0.0",
-                    "fileName": "./README.md",
-                    "mimeType": "text/markdown"
-                }
-            }
-        }
-    }
-}
+          ],
+              "dfp": {
+                  "name": "PIC18F-Q_DFP",
+                  "semverRange": "^1.8.154"
+              },
+              "configurator": {
+                  "name": "MCC",
+                  "semverRange": ">=3.95.0"
+              },
+              "device": {
+                  "metaDataVersion": "1.0.0",
+                  "category": "com.microchip.portal.contentRef",
+                  "content": {
+                      "metaDataVersion": "1.0.0",
+                      "category": "com.microchip.device",
+                      "name": "PIC18F16Q41",
+                      "versionRange": "*"
+                  }
+              },
+              "author": "Microchip",
+              "subcategories": [
+                "MCC",
+             [
+                "Peripherals", "UART1"
+             ],
+             [
+                "Peripherals", "TMR2"
+             ],
+             [
+                "Peripherals", "CLC1"
+             ]
+              ],
+              "peripherals": [
+                "UART1","TMR2","CLC1"
+              ],
+              "keywords": [
+                "MCC",
+                "Melody"
+              ],
+      		"additionalData": {
+      			"longDescription": {
+      				"metaDataVersion": "1.0.0",
+      				"category": "com.microchip.portal.fileRef",
+      				"content": {
+      					"metaDataVersion": "1.0.0",
+      					"fileName": "./README.md",
+      					"mimeType": "text/markdown"
+      				}
+      			}
+      		}
+      	}
+      }
