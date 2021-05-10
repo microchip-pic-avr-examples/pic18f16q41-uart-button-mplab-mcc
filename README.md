@@ -1,7 +1,7 @@
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Printing a message on a serial terminal when the push-button is pressed on a PIC18F16Q41
-  In this application, a push-button input will be configured using a debouncing method. Effectively, this will display a message that is printed to a terminal emulator when the push-button is pressed on the PIC18F16Q41.
+# Printing a message on a serial terminal when the pushbutton is pressed on a PIC18F16Q41
+  In this example, a push-button will be debounced using the Configurable Logic Cell (CLC) and Timer 2 (TMR2) peripherals on the PIC18F16Q41. When this occurs, the UART peripheral will print a message to a serial terminal.
 
 
 ## Related Documentation
@@ -36,10 +36,17 @@
   + Name: “uart-button”
   + **Note: The project name cannot have any empty spaces**
 
-In order for the push-button to work properly, we will configure a technique called a debouncer. There are numerous ways to build a debouncer but for this debouncer one CLC and one Timer. First and foremost, one thing to keep in mind is the input of the button's bounce. Rather then having a single solid input, button's produce an input that has an erratic input and can cause the button to not work properly. By using specific configurations within these peripherals, a debouncer will be executed to ensure our application runs properly.
+When a pushbutton is pressed, the internal contacts in the switch will bounce momentarily, causing the digital value read to vary wildly. This can create false detections of button press and release. To remove the contact bounce from the digital input, a CLC and TMR2 are used to create a debouncer.
 
 
   **Step #2: MPLAB Code Configurator (MCC)**
+
+  + Set Configuration Bits
+    + Disable "External Oscillator Mode Selection"
+    + Set "Power-up Default Value for COSC" to "HFINTOSC with HFFRQ = 64MHz and CDIV = 1:1"
+    + Ensure that "WDT Operating Mode" is set to "WDT Disabled; SWDTEN is ignored"
+
+![CLC Config](images/Picture8.PNG)
 
   +	Modify the Clock Control
     +	Set “Clock Source” to High Frequency Internal Oscillator (HFINTOSC)
@@ -64,7 +71,7 @@ In order for the push-button to work properly, we will configure a technique cal
     + ***Prescaler:*** 1:16
     + ***Potscaler:*** 1:1
   + Timer Period(s)
-    + ***Time Peroid(s):*** 0.00012
+    + ***Time Peroid (s):*** 0.00012
 
 ![TMR2 Config](images/Picture1.PNG)
 
@@ -73,7 +80,7 @@ In order for the push-button to work properly, we will configure a technique cal
   + Set TMR2 and CLC1_OUT to the top two logic gates respectively in the CLC1 configuration
     + Invert the OR gates that are connected to the J and K inputs
 
-![CLC Config](images/clc.PNG)
+![CLC Config](images/Picture7.PNG)
 
 + UART1
   + Software Settings:
@@ -141,11 +148,12 @@ In order for the push-button to work properly, we will configure a technique cal
 
   ![Terminal Emulator Settings](images/Picture5.PNG)
 
-  + If everything is setup correctly, then the serial terminal should start displaying the printf statement when the push-button is activated.
+  + If everything is setup correctly, then the serial terminal should start displaying the printf statement when the pushbutton is activated.
 
 
 ## Summary
 
-This application shows how to create a debouncer for the push-button in order to use UART to display a message t0 a serial terminal when the button is pushed.
+This application demonstrates how to create a debounce a the pushbutton.
+
 
   ![Terminal Emulator Results](images/Picture6.PNG)

@@ -24,7 +24,7 @@
               },
               "configurator": {
                   "name": "MCC",
-                  "semverRange": ">=3.95.0"
+                  "semverRange": ">=4.1.0"
               },
               "device": {
                   "metaDataVersion": "1.0.0",
@@ -54,7 +54,12 @@
               ],
               "keywords": [
                 "MCC",
-                "Melody"
+                "Melody",
+                "Button",
+                "Curiosity Nano",
+                "CLC",
+                "UART"
+
               ],
       		"additionalData": {
       			"longDescription": {
