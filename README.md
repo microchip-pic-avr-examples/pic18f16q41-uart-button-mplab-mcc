@@ -71,7 +71,7 @@ When a pushbutton is pressed, the internal contacts in the switch will bounce mo
     + ***Prescaler:*** 1:16
     + ***Potscaler:*** 1:1
   + Timer Period(s)
-    + ***Time Peroid (s):*** 0.00012
+    + ***Time Period (s):*** 0.00012
 
 ![TMR2 Config](images/Picture1.PNG)
 
@@ -150,10 +150,13 @@ When a pushbutton is pressed, the internal contacts in the switch will bounce mo
 
   + If everything is setup correctly, then the serial terminal should start displaying the printf statement when the pushbutton is activated.
 
+  ![Terminal Emulator Results](images/Picture6.PNG)
+
+  The figure below shows the output wave form of the pushbutton and the CLC output, Yellow is the pushbutton and blue is the CLC output.
+
+    ![Terminal Emulator Results](images/Picture9.PNG)
+
 
 ## Summary
 
 This application demonstrates how to create a debounce a the pushbutton.
-
-
-  ![Terminal Emulator Results](images/Picture6.PNG)
