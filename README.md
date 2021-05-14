@@ -148,8 +148,7 @@ When a pushbutton is pressed, the internal contacts in the switch will bounce mo
 
   ![Terminal Emulator Settings](images/Picture4.PNG)
 
-  +  Configure the serial terminal to communicate at 19200 baud, no parity, and 1 stop bit.  
-
+  + Configure the serial terminal to communicate at 19200 baud, no parity, and 1 stop bit.  
     + Setup &rarr; Serial Port &rarr; Speed: 19200 &rarr; New Setting  
 
 
