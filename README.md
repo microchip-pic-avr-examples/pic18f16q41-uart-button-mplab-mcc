@@ -154,7 +154,8 @@ When a pushbutton is pressed, the internal contacts in the switch will bounce mo
 
   The figure below shows the output wave form of the pushbutton and the CLC output, Yellow is the pushbutton and blue is the CLC output.
 
-    ![Terminal Emulator Results](images/Picture9.PNG)
+
+  ![Waveform](images/Picture9.PNG)
 
 
 ## Summary
