@@ -53,12 +53,17 @@ When a pushbutton is pressed, the internal contacts in the switch will bounce mo
     + Set “HF Internal Clock” to 64_MHz
     + Set “Clock Divider” to 1
 
+![Clock Settings](images/Picture11.PNG)
+
 **Step #3: Adding Timer, CLC and UART Peripheral**
 
 + In Device Resources:
     + Drivers &rarr; Timer &rarr; TMR2
     + Drivers &rarr; CLC &rarr; CLC1
     + Drivers &rarr; UART &rarr; UART1
+
+![Project Resources](images/Picture10.PNG)
+
 
 **Once the peripherals are added, modify the peripherals:**
 
@@ -143,16 +148,18 @@ When a pushbutton is pressed, the internal contacts in the switch will bounce mo
 
   ![Terminal Emulator Settings](images/Picture4.PNG)
 
-  +  Configure the serial terminal to communicate at 19200 baud, no parity, and 1 stop bit.
-    + Setup &rarr; Serial Port &rarr; Speed: 19200 &rarr; New Setting
+  +  Configure the serial terminal to communicate at 19200 baud, no parity, and 1 stop bit.  
 
-  ![Terminal Emulator Settings](images/Picture5.PNG)
+    + Setup &rarr; Serial Port &rarr; Speed: 19200 &rarr; New Setting  
+
+
+  ![COM PORT Settings](images/Picture5.PNG)
 
   + If everything is setup correctly, then the serial terminal should start displaying the printf statement when the pushbutton is activated.
 
   ![Terminal Emulator Results](images/Picture6.PNG)
 
-  The figure below shows the output wave form of the pushbutton and the CLC output, Yellow is the pushbutton and blue is the CLC output.
+The figure below shows an example of the button being debounced. The yellow signal is the pushbutton after being released, and the blue signal is the output of the CLC.
 
 
   ![Waveform](images/Picture9.PNG)
