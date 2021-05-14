@@ -2,7 +2,7 @@
     "metaDataVersion": "1.0.0",
     "category": "com.microchip.ide.project",
     "content": {
-        "metaDataVersion": "1.1.0",
+        "metaDataVersion": "1.0.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f16q41-uart-button-mpab-mcc",
         "version": " ",
         "displayName": "PIC18F16Q41 uart button mpab mcc",
