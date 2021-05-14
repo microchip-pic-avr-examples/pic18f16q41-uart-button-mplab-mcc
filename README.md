@@ -1,6 +1,6 @@
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Printing a message on a serial terminal when the pushbutton is pressed on a PIC18F16Q41
+# Debouncing a Pushbutton on the PIC18F16Q41
   In this example, a push-button will be debounced using the Configurable Logic Cell (CLC) and Timer 2 (TMR2) peripherals on the PIC18F16Q41. When this occurs, the UART peripheral will print a message to a serial terminal.
 
 
@@ -118,7 +118,7 @@ When a pushbutton is pressed, the internal contacts in the switch will bounce mo
   + Upon the generation being completed, the new MCC generated header and source files will be in the project window. Select the main.c file and you will see an empty while(1) loop where you can add your application code.
   + The function **CLC1_OutputStatusGet()** is used to poll the output of the CLC directly from the hardware register.  
   + Select on the source files and open the “main.c” file
-    + Before the while loop, define a boolean named **pressed** and initialize it to `false`.
+    + Before the while loop, define a boolean named **pressed** and initialize it to **false**.
 
 
 ```     
