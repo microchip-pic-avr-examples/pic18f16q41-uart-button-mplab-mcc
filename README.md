@@ -1,8 +1,7 @@
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
 # Debouncing a Pushbutton on the PIC18F16Q41
-  In this example, a push-button will be debounced using the Configurable Logic Cell (CLC) and Timer 2 (TMR2) peripherals on the PIC18F16Q41. When this occurs, the UART peripheral will print a message to a serial terminal.
-
+  In this example, a pushbutton will be debounced using the Configurable Logic Cell (CLC) and Timer 2 (TMR2) peripherals on the PIC18F16Q41. When this occurs, the UART peripheral will print a message to a serial terminal.
 
 ## Related Documentation
 
