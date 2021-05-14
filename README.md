@@ -14,15 +14,16 @@
 
 ## Software Used
 
-* [MPLAB® X IDE](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide)
-* [MPLAB Code Configurator (MCC)](https://www.microchip.com/mplab/mplab-code-configurator)
-* [MPLAB XC8 Compiler](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers)
+* [MPLAB® X IDE v5.45](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_pic18q41&utm_content=pic18f16q41-uart-button-mpab-mcc-github)
+* [MPLAB Code Configurator (MCC) v4.1.0](https://www.microchip.com/en-us/development-tools-tools-and-software/embedded-software-center/mplab-code-configurator?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_pic18q41&utm_content=pic18f16q41-uart-button-mpab-mcc-github)
+  * Melody Library v1.37.22
+* [MPLAB XC8 Compiler v2.31](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_pic18q41&utm_content=pic18f16q41-uart-button-mpab-mcc-github)
 
-* [MPLAB Data Visualizer Plugin](https://www.microchip.com/en-us/development-tools-tools-and-software/embedded-software-center/mplab-data-visualizer) or other serial terminal
+* [MPLAB Data Visualizer Plugin](https://www.microchip.com/en-us/development-tools-tools-and-software/embedded-software-center/mplab-data-visualizer?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_pic18q41&utm_content=pic18f16q41-uart-button-mpab-mcc-github) or other serial terminal
 
 ## Hardware Used
 
-* [PIC18F16Q41 Product Information](https://www.microchip.com/wwwproducts/en/PIC18F16Q41)
+* [PIC18F16Q41 Curiosity Nano](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/EV26Q64A?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_pic18q41&utm_content=pic18f16q41-uart-button-mpab-mcc-github)
 
 
 ## Setup
@@ -115,9 +116,9 @@ When a pushbutton is pressed, the internal contacts in the switch will bounce mo
 
   **Step #6: Modifying main.c**
   + Upon the generation being completed, the new MCC generated header and source files will be in the project window. Select the main.c file and you will see an empty while(1) loop where you can add your application code.
-  + The function **CLC1_OutputStatusGet()** will be implemented in the source code to poll the output of the CLC directly from the hardware.  
+  + The function **CLC1_OutputStatusGet()** is used to poll the output of the CLC directly from the hardware register.  
   + Select on the source files and open the “main.c” file
-    + Before the while loop, define a boolean named **pressed** and assign false.
+    + Before the while loop, define a boolean named **pressed** and initialize it to `false`.
 
 
 ```     
@@ -158,7 +159,7 @@ When a pushbutton is pressed, the internal contacts in the switch will bounce mo
 
   ![Terminal Emulator Results](images/Picture6.PNG)
 
-The figure below shows an example of the button being debounced. The yellow signal is the pushbutton after being released, and the blue signal is the output of the CLC.
+The figure below shows an example of the button being debounced. The yellow signal is the pushbutton after being released and the blue signal shows the output of the CLC.
 
 
   ![Waveform](images/Picture9.PNG)
