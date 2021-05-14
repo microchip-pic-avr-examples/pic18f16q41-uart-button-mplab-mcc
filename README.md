@@ -160,4 +160,4 @@ When a pushbutton is pressed, the internal contacts in the switch will bounce mo
 
 ## Summary
 
-This application demonstrates how to create a debounce a the pushbutton.
+This application demonstrates how to debounce a pushbutton.
