@@ -3,10 +3,10 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.mplabx.project.pic18f16q41-uart-button-mpab-mcc",
+        "name": "com.microchip.mcu8.mplabx.project.pic18f16q41-uart-button-mplab-mcc",
         "version": "1.0.0",
-        "displayName": "PIC18F16Q41 uart button mpab mcc",
-        "projectName": "pic18f16q41-uart-button-mpab-mcc",
+        "displayName": "Debouncing a Pushbutton on the PIC18F16Q41",
+        "projectName": "pic18f16q41-uart-button-mplab-mcc",
         "shortDescription": "This example will display a message on a serial terminal when the button on the pic18f16q41 is pushed",
         "ide": {
             "name": "MPLAB X",
