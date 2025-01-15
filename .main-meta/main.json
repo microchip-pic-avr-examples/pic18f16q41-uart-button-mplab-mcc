@@ -10,12 +10,12 @@
         "shortDescription": "This example will display a message on a serial terminal when the button on the pic18f16q41 is pushed",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ">=5.45.0"
+            "semverRange": ">=6.20.0"
         },
         "compiler": [
             {
                 "name": "XC8",
-                "semverRange": "^2.31.0"
+                "semverRange": "^3.0.0"
             }
           ],
               "dfp": {
