@@ -36,41 +36,29 @@
                       "versionRange": "*"
                   }
               },
-              "author": "Microchip",
-              "subcategories": [
-                "MCC",
-             [
-                "Peripherals", "UART1"
-             ],
-             [
-                "Peripherals", "TMR2"
-             ],
-             [
-                "Peripherals", "CLC1"
-             ]
-              ],
-              "peripherals": [
-                "UART","TMR2","CLC"
-              ],
-              "keywords": [
-                "MCC",
-                "Melody",
-                "Button",
-                "Curiosity Nano",
-                "CLC",
-                "UART"
-
-              ],
-      		"additionalData": {
-      			"longDescription": {
-      				"metaDataVersion": "1.0.0",
-      				"category": "com.microchip.portal.fileRef",
-      				"content": {
-      					"metaDataVersion": "1.0.0",
-      					"fileName": "./README.md",
-      					"mimeType": "text/markdown"
-      				}
-      			}
-      		}
-      	}
-      }
+      "author": "Microchip",
+    "peripherals": [
+        "UART",
+        "TMR2",
+        "CLC"
+    ],
+    "keywords": [
+        "MCC",
+        "Melody",
+        "Button",
+        "Curiosity Nano",
+        "CLC",
+        "UART"
+    ],
+    "additionalData": {
+        "longDescription": {
+            "metaDataVersion": "1.0.0",
+            "category": "com.microchip.portal.fileRef",
+            "content": {
+                "metaDataVersion": "1.0.0",
+                "fileName": "./README.md",
+                "mimeType": "text/markdown"
+            }
+        }
+    }
+}
