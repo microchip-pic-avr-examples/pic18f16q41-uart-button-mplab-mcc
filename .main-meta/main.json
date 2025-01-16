@@ -17,47 +17,48 @@
                 "name": "XC8",
                 "semverRange": "^3.0.0"
             }
-          ],
-              "dfp": {
-                  "name": "PIC18F-Q_DFP",
-                  "semverRange": "^1.8.154"
-              },
-              "configurator": {
-                  "name": "MCC",
-                  "semverRange": ">=4.1.0"
-              },
-              "device": {
-                  "metaDataVersion": "1.0.0",
-                  "category": "com.microchip.portal.contentRef",
-                  "content": {
-                      "metaDataVersion": "1.0.0",
-                      "category": "com.microchip.device",
-                      "name": "PIC18F16Q41",
-                      "versionRange": "*"
-                  }
-              },
-      "author": "Microchip",
-    "peripherals": [
-        "UART",
-        "TMR2",
-        "CLC"
-    ],
-    "keywords": [
-        "MCC",
-        "Melody",
-        "Button",
-        "Curiosity Nano",
-        "CLC",
-        "UART"
-    ],
-    "additionalData": {
-        "longDescription": {
+        ],
+        "dfp": {
+            "name": "PIC18F-Q_DFP",
+            "semverRange": "^1.8.154"
+        },
+        "configurator": {
+            "name": "MCC",
+            "semverRange": ">=4.1.0"
+        },
+        "device": {
             "metaDataVersion": "1.0.0",
-            "category": "com.microchip.portal.fileRef",
+            "category": "com.microchip.portal.contentRef",
             "content": {
                 "metaDataVersion": "1.0.0",
-                "fileName": "./README.md",
-                "mimeType": "text/markdown"
+                "category": "com.microchip.device",
+                "name": "PIC18F16Q41",
+                "versionRange": "*"
+            }
+        },
+        "author": "Microchip",
+        "peripherals": [
+            "UART",
+            "TMR2",
+            "CLC"
+        ],
+        "keywords": [
+            "MCC",
+            "Melody",
+            "Button",
+            "Curiosity Nano",
+            "CLC",
+            "UART"
+        ],
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "./README.md",
+                    "mimeType": "text/markdown"
+                }
             }
         }
     }
