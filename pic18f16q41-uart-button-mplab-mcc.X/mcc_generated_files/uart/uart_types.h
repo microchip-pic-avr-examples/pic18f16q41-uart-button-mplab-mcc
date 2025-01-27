@@ -1,15 +1,13 @@
 /**
- * System Driver Header File.
+ * UART Generated Driver Interface Header File
  * 
- * @file system.h
+ * @file uart_types.h
  * 
- * @defgroup systemdriver System Driver
+ * @defgroup uart_types UART_TYPES
  * 
- * @brief This file contains the API prototypes and other datatypes for the System Driver.
+ * @brief This file contains the enumeration of different Universal Asynchronous Receiver and Transmitter (UART) baud rates.
  *
- * @version Driver Version 2.0.3
- *
- * @version Package Version 2.1.6
+ * @version UART Driver Version 3.0.2
 */
 /*
 © [2025] Microchip Technology Inc. and its subsidiaries.
@@ -32,29 +30,52 @@
     THIS SOFTWARE.
 */
 
-#ifndef SYSTEM_H
-#define	SYSTEM_H
+#ifndef UART_TYPES_H
+#define	UART_TYPES_H
 
-#include <xc.h>
-#include <stdint.h>
+/**
+  Section: Included Files
+*/
 #include <stdbool.h>
-#include "config_bits.h"
-#include "../system/pins.h"
-#include "../clc/clc1.h"
-#include "../uart/uart1.h"
-#include "../system/interrupt.h"
-#include "../system/clock.h"
-#include "../timer/tmr2.h"
+#include <stdint.h>
 
-/**
- * @ingroup systemdriver
- * @brief Initializes the system module. This is called only once before calling other APIs.
- * @param None.
- * @return None.
-*/
-void SYSTEM_Initialize(void);
+#ifdef	__cplusplus
+extern "C" {
+#endif
 
-#endif	/* SYSTEM_H */
+   
 /**
- End of File
+  Section: Data Type Definitions
+*/ 
+      
+/**
+@ingroup uartdriver
+@enum UART_STANDARD_BAUDS
+@brief This Enum can be used to set the UART standard
+baud-rates using \ref UARTx_BRGSet function e.g. \ref UART1_BRGSet.
 */
+enum UART_STANDARD_BAUDS{
+UART_110 = 0,
+UART_300 = 1,
+UART_600 = 2,
+UART_1200 = 3,
+UART_2400 = 4,
+UART_4800 = 5,
+UART_9600 = 6,
+UART_14400 = 7,
+UART_19200 = 8,
+UART_38400 = 9,
+UART_57600 = 10,
+UART_115200 = 11,
+UART_230400 = 12,
+UART_460800 = 13,
+UART_921600 = 14,
+};
+
+
+#ifdef	__cplusplus
+}
+#endif
+
+#endif	/* UART_TYPES_H */
+

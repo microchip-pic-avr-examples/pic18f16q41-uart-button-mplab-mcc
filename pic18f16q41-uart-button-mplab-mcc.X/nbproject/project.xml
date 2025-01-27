@@ -4,23 +4,19 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>pic18f16q41-uart-button-mplab-mcc</name>
-            <creation-uuid>42a80b9d-f6e6-4f7b-8aee-fc691af31802</creation-uuid>
+            <creation-uuid>3d40262a-27bd-451f-9e09-68db82f1dbb2</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions>c</c-extensions>
-            <cpp-extensions/>
-            <header-extensions>h</header-extensions>
-            <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList/>
             <confList>
                 <confElem>
                     <name>free</name>
-                    <type>2</type>
+                    <type>3</type>
                 </confElem>
                 <confElem>
                     <name>pro</name>
-                    <type>2</type>
+                    <type>3</type>
                 </confElem>
             </confList>
             <formatting>
