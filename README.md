@@ -1,7 +1,7 @@
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Debouncing a Pushbutton on the PIC18F16Q41
-  In this example, a pushbutton will be debounced using the Configurable Logic Cell (CLC) and Timer 2 (TMR2) peripherals on the PIC18F16Q41. When this occurs, the UART peripheral will print a message to a serial terminal.
+# Debouncing a Push button on the PIC18F16Q41
+  In this example, a push button will be debounced using the Configurable Logic Cell (CLC) and Timer 2 (TMR2) peripherals on the PIC18F16Q41. When this occurs, the UART peripheral will print a message to a serial terminal.
 
 ## Related Documentation
 
@@ -36,7 +36,7 @@
   + Name: “uart-button”
   + **Note: The project name cannot have any empty spaces**
 
-When a pushbutton is pressed, the internal contacts in the switch will bounce momentarily, causing the digital value read to vary wildly. This can create false detections of button press and release. To remove the contact bounce from the digital input, a CLC and TMR2 are used to create a debouncer.
+When a push button is pressed, the internal contacts in the switch will bounce momentarily, causing the digital value read to vary wildly. This can create false detections of button press and release. To remove the contact bounce from the digital input, a CLC and TMR2 are used to create a debouncer.
 
 
   **Step #2: MPLAB Code Configurator (MCC)**
@@ -154,11 +154,11 @@ When a pushbutton is pressed, the internal contacts in the switch will bounce mo
 
   ![COM PORT Settings](images/Picture5.PNG)
 
-  + If everything is setup correctly, then the serial terminal should start displaying the printf statement when the pushbutton is activated.
+  + If everything is setup correctly, then the serial terminal should start displaying the printf statement when the push button is activated.
 
   ![Terminal Emulator Results](images/Picture6.PNG)
 
-The figure below shows an example of the button being debounced. The yellow signal is the pushbutton after being released and the blue signal shows the output of the CLC.
+The figure below shows an example of the button being debounced. The yellow signal is the push button after being released and the blue signal shows the output of the CLC.
 
 
   ![Waveform](images/Picture9.PNG)
@@ -166,4 +166,4 @@ The figure below shows an example of the button being debounced. The yellow sign
 
 ## Summary
 
-This application demonstrates how to debounce a pushbutton.
+This application demonstrates how to debounce a push button.
